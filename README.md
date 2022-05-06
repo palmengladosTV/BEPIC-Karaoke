@@ -12,9 +12,9 @@ This is a small project of a karaoke list for the annual BEPIC-Fest at Ulm Unive
 ## Setup
 
 1. Execute `KARAOKE.SQL` to create the required database and tables
-2. Change username and password to fit your database in `globals.php`
-3. Start the webserver and you're good to go
-
+2. Change username (`$db_user`) and password (`$db_pw`) to fit your database in `globals.php`
+3. Change the login password (`$PASSWORD`) in `globals.php` so you're allowed to add, move and delete entries.
+4. Start the webserver and you're good to go
 
 
 © 2022 Fabian Lippold & Tim Palm
