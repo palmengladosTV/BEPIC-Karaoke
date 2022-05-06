@@ -1,8 +1,9 @@
 <?php
 include("globals.php");
-/** @var string $ERROR_DB */
-/** @var string $ERROR_PARAM */
-/** @var mysqli $db */
+
+if (!array_key_exists("pw", $_COOKIE) || $_COOKIE["pw"] !== $PASSWORT) {
+	die($ERROR_LOGIN);
+}
 
 $stmt = $db->prepare("DELETE FROM KARAOKE");
 $stmt->execute();

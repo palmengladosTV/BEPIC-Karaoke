@@ -1,11 +1,11 @@
 <?php
+include("globals.php");
+
+if (!array_key_exists("pw", $_COOKIE) || $_COOKIE["pw"] !== $PASSWORT) {
+	die($ERROR_LOGIN);
+}
+
 if (array_key_exists("pos", $_POST)) {
-
-    include("globals.php");
-    /** @var string $ERROR_DB */
-    /** @var string $ERROR_PARAM */
-    /** @var mysqli $db */
-
     $pos = $_POST["pos"];
 
     $stmt = $db->prepare("DELETE FROM KARAOKE WHERE POS = ?");

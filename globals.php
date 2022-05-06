@@ -1,8 +1,8 @@
 <?php
 $ERROR_DB = "Dicker error mit datenbank oder so";
 $ERROR_PARAM = "Dicker error wegen query parametern oder so";
+$ERROR_LOGIN = "Falsches Passwort oder nicht eingeloggt!";
 
-$ERROR_LOGIN = "Nicht eingelogged du fetz";
 $PASSWORT = "passwort";
 
 $db_user = "root";
@@ -16,7 +16,3 @@ $db = new mysqli("localhost", $db_user, $db_pw, $db_name);
 if ($db->connect_errno) {
     die($ERROR_DB);
 }
-
-/** @var string $ERROR_DB */
-/** @var string $ERROR_PARAM */
-/** @var mysqli $db */

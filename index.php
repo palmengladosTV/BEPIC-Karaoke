@@ -32,23 +32,25 @@
 
     for ($i = 0; $i < count($result); $i++) {
         echo "<tr>";
-        echo "<td>" . $result[$i][0] . "</td>";
-        echo "<td>" . $result[$i][1] . "</td>";
-        echo "<td>" . $result[$i][2] . "</td>";
-        echo "<td>" . $result[$i][3] . "</td>";
-        echo "<td class=\"move\">";
-        echo "<form action=\"move.php\" onsubmit=\"tryMove()\" method=\"POST\">";
-        echo "<input type=\"hidden\" name=\"from\" value=" . ($i + 1) . "></input>";
-        echo "<input type=\"hidden\" name=\"to\" class=\"to\" value=" . ($i + 1) . "></input>";
-        echo "<button type=\"submit\" class=\"hidden\">V</button>";
-        echo "</form>";
-        echo "</td>";
-        echo "<td class=\"delete\">";
-        echo "<form action=\"delete.php\" method=\"POST\">";
-        echo "<input type=\"hidden\" name=\"pos\" value=" . ($i + 1) . "></input>";
-        echo "<button type=\"submit\" class=\"hidden\">X</button>";
-        echo "</form>";
-        echo "</td>";
+	        echo "<td>" . $result[$i][0] . "</td>";
+	        echo "<td>" . $result[$i][1] . "</td>";
+	        echo "<td>" . $result[$i][2] . "</td>";
+	        echo "<td>" . $result[$i][3] . "</td>";
+
+	        echo "<td class=\"move\">";
+		        echo "<form action=\"move.php\" onsubmit=\"tryMove()\" method=\"POST\">";
+			        echo "<input type=\"hidden\" name=\"from\" value=" . ($i + 1) . "></input>";
+			        echo "<input type=\"hidden\" name=\"to\" class=\"to\" value=" . ($i + 1) . "></input>";
+			        echo "<button type=\"submit\" class=\"hidden\">V</button>";
+		        echo "</form>";
+	        echo "</td>";
+
+	        echo "<td class=\"delete\">";
+		        echo "<form action=\"delete.php\" method=\"POST\">";
+			        echo "<input type=\"hidden\" name=\"pos\" value=" . ($i + 1) . "></input>";
+			        echo "<button type=\"submit\" class=\"hidden\">X</button>";
+		        echo "</form>";
+	        echo "</td>";
         echo "</tr>";
     }
     ?>
