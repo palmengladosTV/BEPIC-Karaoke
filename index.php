@@ -68,6 +68,13 @@
 
 </body>
 
+<button class="hidden">
+	<a href="https://github.com/Fabus1184/BEPIC-Karaoke"> GitHub</a>
+</button>
+
+</body>
+
+
 <footer>
     &copy 2022 Fabian Lippold & Tim Palm
 </footer>

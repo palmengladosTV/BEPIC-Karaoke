@@ -6,7 +6,7 @@ $ERROR_LOGIN = "Falsches Passwort oder nicht eingeloggt!";
 $PASSWORT = "passwort";
 
 $db_user = "root";
-$db_pw = "";
+$db_pw = "glucose12";
 $db_name = "KARAOKE";
 
 $songs = json_decode(file_get_contents("songs.json"), true);
