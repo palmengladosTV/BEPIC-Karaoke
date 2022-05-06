@@ -54,13 +54,15 @@
     ?>
 </table>
 
-<button  class="hidden">
+<button class="hidden">
 	<a href="insert.php">Neuen Eintrag hinzufügen</a>
 </button>
 
-<button  class="hidden">
+<button class="hidden">
 	<a href="drop.php">Alle Einträge löschen</a>
 </button>
+
+<button class="hidden" onclick="login()">Login</button>
 
 </body>
 

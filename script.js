@@ -28,3 +28,8 @@ function tryMove() {
 	let to = prompt("Neue Position?");
 	Array.from(document.getElementsByClassName("to")).forEach((elem) => elem.value = to);
 }
+
+function login() {
+	let pw = prompt("Passwort:");
+	document.cookie = "password=" + pw;
+}

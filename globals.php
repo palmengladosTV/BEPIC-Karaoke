@@ -2,6 +2,9 @@
 $ERROR_DB = "Dicker error mit datenbank oder so";
 $ERROR_PARAM = "Dicker error wegen query parametern oder so";
 
+$ERROR_LOGIN = "Nicht eingelogged du fetz";
+$PASSWORT = "passwort";
+
 $db_user = "root";
 $db_pw = "";
 $db_name = "KARAOKE";
