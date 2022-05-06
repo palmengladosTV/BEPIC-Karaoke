@@ -1,11 +1,11 @@
 <?php
-if (array_key_exists("song", $_POST)
-    && array_key_exists("person", $_POST)
-    && array_key_exists("pw", $_COOKIE)) {
+if (!array_key_exists("pw", $_COOKIE) || $_COOKIE["pw"] !== $PASSWORT) {
+	die($ERROR_LOGIN);
+}
 
-	if ($_COOKIE["pw"] != $PASSWORT) {
-		die($ERROR_LOGIN);
-	}
+if (array_key_exists("song", $_POST)
+    && array_key_exists("person", $_POST)) {
+
 
     include("globals.php");
     /** @var string $ERROR_DB */

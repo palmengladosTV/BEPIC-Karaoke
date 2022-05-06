@@ -31,5 +31,5 @@ function tryMove() {
 
 function login() {
 	let pw = prompt("Passwort:");
-	document.cookie = "password=" + pw;
+	document.cookie = "pw=" + pw;
 }
