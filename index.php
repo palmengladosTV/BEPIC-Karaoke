@@ -67,7 +67,7 @@
 <button class="hidden" onclick="login()">Login</button>
 
 <button class="hidden">
-        <a href="https://github.com/Fabus1184/BEPIC-Karaoke"> GitHub</a>
+        <a href="https://github.com/Fabus1184/BEPIC-Karaoke">GitHub</a>
 </button>
 	
 </body>
