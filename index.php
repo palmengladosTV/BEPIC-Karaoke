@@ -30,7 +30,7 @@
     $stmt->close();
     $result = $result->fetch_all();
 
-if (array_key_exists("pw", $_COOKIE) || $_COOKIE["pw"] == $PASSWORT) {
+if (array_key_exists("pw", $_COOKIE) && $_COOKIE["pw"] === $PASSWORT) {
 	for ($i = 0; $i < count($result); $i++) {
 	        echo "<tr>";
 		        echo "<td>" . $result[$i][0] . "</td>";
@@ -80,9 +80,6 @@ else
 
 <button class="hidden" onclick="login()">Login</button>
 
-<button class="hidden">
-        <a href="https://github.com/Fabus1184/BEPIC-Karaoke">GitHub</a>
-</button>
 	
 </body>
 
@@ -91,5 +88,8 @@ else
 
 <footer>
     &copy 2022 Fabian Lippold & Tim Palm
+	<button class="hidden">
+	        <a href="https://github.com/Fabus1184/BEPIC-Karaoke">GitHub</a>
+	</button>
 </footer>
 </html>
