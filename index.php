@@ -75,7 +75,7 @@ else
 </button>
 
 <button class="hidden">
-	<a href="drop.php">Alle Einträge löschen</a>
+	<a href="drop.php" onclick="return confirm('Do you really want to delete all entries?')">Alle Einträge löschen</a>
 </button>
 
 <button class="hidden" onclick="login()">Login</button>
